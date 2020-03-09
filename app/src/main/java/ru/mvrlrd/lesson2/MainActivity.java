@@ -15,6 +15,12 @@ import android.widget.Button;
 //Также приходит 5 сообщений в лог каждые 1 секунду.
 //Сообщения должны содержать имя потока.
 
+//3
+//Активити состоит из двух кнопок.
+// По нажатию на первую, начинает приходить сообщения.
+// По нажатию на вторую - отписка от сообщений.
+// Реализовать с помощью RxJava
+
 public class MainActivity extends AppCompatActivity {
     private final static String TAG = "Info: ";
     private final static String TAG2 = "Async: ";
