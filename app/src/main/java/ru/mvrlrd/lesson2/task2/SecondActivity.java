@@ -1,7 +1,6 @@
 package ru.mvrlrd.lesson2.task2;
 
 import android.os.Bundle;
-import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import androidx.appcompat.app.AppCompatActivity;
@@ -23,14 +22,14 @@ public class SecondActivity extends AppCompatActivity {
 
     private final static String TAG = "Info: ";
     Button subscribeButton, unsubscribeButton, spamButton;
-    Subscribe subscribe;
+    Subscription subscription;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_second);
 
-        subscribe = new Subscribe();
+        subscription = new Subscription();
 
         subscribeButton = findViewById(R.id.subscribe);
         unsubscribeButton = findViewById(R.id.unsubscribe);
@@ -38,25 +37,15 @@ public class SecondActivity extends AppCompatActivity {
     }
 
     public void onClickButtonSubscribe(View view) {
-        if (subscribe.isFlag()){
-            Log.d(TAG, "already subscribed " + Thread.currentThread().getName());
-        }else {
-            subscribe.subscribeObserver();
-            Log.d(TAG, "subscribed " + Thread.currentThread().getName());
-        }
+            subscription.subscribeObserver();
     }
 
     public void onClickButtonUnsubscribe(View view) {
-        if(!subscribe.isFlag()){
-            Log.d(TAG, "already unsubscribed " + Thread.currentThread().getName());
-        }else {
-            subscribe.unsubscribeObserver();
-            Log.d(TAG, "unsubscribed " + Thread.currentThread().getName());
-        }
+            subscription.unsubscribeObserver();
     }
 
     public void onClickButtonSpam(View view) {
-       subscribe.notifyAllObservers();
+       subscription.notifyAllObservers();
     }
 }
 
