@@ -21,8 +21,7 @@ import ru.mvrlrd.lesson2.R;
 public class SecondActivity extends AppCompatActivity {
 
     private final static String TAG = "Info: ";
-    Button subscribeButton, unsubscribeButton, spamButton;
-    Subscription subscription;
+    private Subscription subscription;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -30,10 +29,6 @@ public class SecondActivity extends AppCompatActivity {
         setContentView(R.layout.activity_second);
 
         subscription = new Subscription();
-
-        subscribeButton = findViewById(R.id.subscribe);
-        unsubscribeButton = findViewById(R.id.unsubscribe);
-        spamButton = findViewById(R.id.spam);
     }
 
     public void onClickButtonSubscribe(View view) {
