@@ -22,21 +22,23 @@ public class SecondActivity extends AppCompatActivity {
 
     private final static String TAG = "Info: ";
     private Subscription subscription;
+    private Observer user1;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_second);
 
+        user1= new SpamEmitter();
         subscription = new Subscription();
     }
 
     public void onClickButtonSubscribe(View view) {
-            subscription.subscribeObserver();
+            subscription.subscribeObserver(user1);
     }
 
     public void onClickButtonUnsubscribe(View view) {
-            subscription.unsubscribeObserver();
+            subscription.unsubscribeObserver(user1);
     }
 
     public void onClickButtonSpam(View view) {
