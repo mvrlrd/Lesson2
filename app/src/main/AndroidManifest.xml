@@ -17,14 +17,12 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        
+
         <activity android:name=".lesson3task2.SecondActivity">
 
         </activity>
 
-        <activity android:name=".task2.SecondActivity">
 
-        </activity>
 
 
     </application>
