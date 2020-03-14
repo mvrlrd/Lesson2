@@ -2,7 +2,7 @@ package ru.mvrlrd.lesson2.task2;
 
 import android.os.Bundle;
 import android.view.View;
-import android.widget.Button;
+
 import androidx.appcompat.app.AppCompatActivity;
 import ru.mvrlrd.lesson2.R;
 
@@ -27,7 +27,7 @@ public class SecondActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_second);
+        setContentView(R.layout.activity_second2);
 
         user1= new SpamEmitter();
         subscription = new Subscription();

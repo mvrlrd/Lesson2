@@ -4,41 +4,17 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".task2.SecondActivity">
+    tools:context=".task11.SecondActivity">
 
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:orientation="vertical">
-
-        <Button
-            android:id="@+id/subscribe"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_gravity="start"
-            android:layout_marginRight="10dp"
-            android:layout_weight="1"
-            android:onClick="onClickButtonSubscribe"
-            android:text="подписаться" />
-
-        <Button
-            android:id="@+id/unsubscribe"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center_horizontal"
-            android:layout_weight="1"
-            android:onClick="onClickButtonUnsubscribe"
-            android:text="отписаться" />
-
-        <Button
-            android:id="@+id/spam"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_gravity="end"
-            android:layout_marginLeft="10dp"
-            android:layout_weight="1"
-            android:onClick="onClickButtonSpam"
-            android:text="спам" />
-    </LinearLayout>
-
+    <Button
+        android:id="@+id/button"
+        android:layout_width="275dp"
+        android:layout_height="150dp"
+        android:text="Button"
+        android:textColor="@color/colorAccent"
+        android:textSize="55sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 </androidx.constraintlayout.widget.ConstraintLayout>

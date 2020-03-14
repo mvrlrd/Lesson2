@@ -10,11 +10,7 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
 
-        <activity android:name=".task1.MainActivity">
-
-        </activity>
-
-        <activity android:name=".task2.SecondActivity">
+        <activity android:name=".task11.SecondActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -22,7 +18,11 @@
             </intent-filter>
         </activity>
 
-        <activity android:name=".task3.ThirdActivity">
+        <activity android:name=".task2.SecondActivity">
+
+        </activity>
+
+        <activity android:name=".lesson3task1.FirstActivity">
 
         </activity>
     </application>

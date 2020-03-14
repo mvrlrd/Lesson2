@@ -1,11 +1,12 @@
-package ru.mvrlrd.lesson2.task3;
+package ru.mvrlrd.lesson2.lesson3task1;
 
-import android.database.Observable;
 import android.util.Log;
 import java.util.concurrent.TimeUnit;
 import io.reactivex.Observable;
 import io.reactivex.ObservableOnSubscribe;
 import io.reactivex.schedulers.Schedulers;
+
+
 
 class SpamPresenter {
     private static final String TAG = "SpamPresenter";
