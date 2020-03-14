@@ -1,4 +1,4 @@
-package ru.mvrlrd.lesson2.task11;
+package ru.mvrlrd.lesson2.lesson3task2;
 
 import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;

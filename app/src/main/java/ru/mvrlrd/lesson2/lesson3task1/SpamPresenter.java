@@ -6,8 +6,6 @@ import io.reactivex.Observable;
 import io.reactivex.ObservableOnSubscribe;
 import io.reactivex.schedulers.Schedulers;
 
-
-
 class SpamPresenter {
     private static final String TAG = "SpamPresenter";
 

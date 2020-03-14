@@ -16,7 +16,8 @@ import android.view.View;
 //Активити состоит из двух кнопок.
 // По нажатию на первую, начинает приходить сообщения.
 // По нажатию на вторую - отписка от сообщений.
-// Реализовать с помощью RxJava
+// Реализовать с помощью RxJava + лямбда-выражениями.
+// Для view и слушателей применить ButterKnife
 
 public class FirstActivity extends AppCompatActivity {
     private static final String TAG = "FirstActivity";
